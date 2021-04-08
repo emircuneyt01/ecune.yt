@@ -2,9 +2,9 @@
 <span id="a">emir@cuneyt</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->emir.txt<br/><br/>
 My favorite code quote, "<span id="k">Quote you like</span>". <!-- sjkfhskjf -->
 
-Welcome to the website of Emir Cuneyt Akkutlu, a security admirer and currently a Site-Reliability Engineer.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>He is a 29 years old gaming and fishing addict who lives in Athens/Greece.</p>
+Welcome to the website of Emir Cuneyt Akkutlu, a security admirer and currently works as a Site-Reliability Engineer.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>He is a 29 years old gaming and fishing addict who lives in Athens/Greece.</p>
 <p>Emir spends his time at work mostly automating tasks, creating and ensuring a system without any outages. Currently all the systems he is working are Debian %90 and %10 Windows, so he has a good friendship with Bash Script and Linux.</p> <!-- bitlagbitlagbitlagbitlagbitlagbitlag -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
+<p> He also spends his time for bug hunting mostly at public programs. But his favorite program is Gitlab which still he is trying to find his first valid bug but not duplicates.<a href="link"> portfolio</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
 <p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
 <p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a> <br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.</p>
 
