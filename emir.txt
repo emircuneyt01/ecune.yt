@@ -1,8 +1,8 @@
-<span id="a">your-first-name@your-last-name</span>:<span id="b">~</span><span id="c">$</span> cd CodeNerve/<!-- laglaglaglaglaglag -->About_Us
-<span id="a">your-first-name@your-last-name</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->[your-name].txt<br/><br/>
+<span id="a">emir@cuneyt</span>:<span id="b">~</span><span id="c">$</span> cd EmirCuneytAkkutly/<!-- laglaglaglaglaglag -->About_Me
+<span id="a">emir@cuneyt</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->emir.txt<br/><br/>
 My favorite code quote, "<span id="k">Quote you like</span>". <!-- sjkfhskjf -->
 
-Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
+Welcome to the website of Emir Cuneyt Akkutlu, a security admirer and currently a Site-Reliability Engineer.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>I'm a 29 years old gaming and fishing addict who lives is Athens/Greece.</p>
 <p>You can introduce yourself here.</p> <!-- bitlagbitlagbitlagbitlagbitlagbitlag -->
 <p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
 <p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
