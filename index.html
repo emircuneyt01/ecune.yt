@@ -1,9 +1,8 @@
 <html>
- <body>
-  <script>
-   if (window.opener) {
-      window.opener.location = "https://evil.com";
-   }
-  </script>
- </body>
+<script>
+if (window.opener) window.opener.parent.location.replace('http://evil.com');
+if (window.parent != window) window.parent.location.replace('http://evil.com');
+</script>
+blah
+
 </html>
