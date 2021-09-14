@@ -8,7 +8,7 @@ body {
   font-size: 100%;
   background: #f8f8f8; }
 
-#footer{
+footer{
     display: table;
     text-align: center;
     margin-left: auto;
