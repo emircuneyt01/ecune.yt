@@ -8,6 +8,11 @@ body {
   font-size: 100%;
   background: #f8f8f8; }
 
+footer {
+  
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #666; }
