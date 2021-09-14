@@ -1,159 +1,92 @@
-<html>
-  <body>
-	  <style>
-	  header {
- text-align:center; 
- 
-}
 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Emir Cuneyt Akkutlu</title>
 
-header nav a {
-  
-  
-  
-  display:inline-block;
-  font-size:13px;
-  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  line-height:30px;
-  text-decoration:none;
-  text-transform:uppercase;
-  
-}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/typed.custom.js" type="text/javascript"></script>
+	<script>
+	$(function(){
 
-header nav a:hover {
- color:black; 
- text-decoration:underline;
-  
-}
+		$("#typed").typed({
+			strings: ["Infrastructure & Operations", "Project Management", "CyberSecurity", "Team Leadership", "And so much more...", "Hi, I'm Joel."],
+			typeSpeed: 30,
+      callback: function(){
+        shift();
+      }
+		});
 
-body {
-  background-color: #f7f7f9;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
-  padding: 20px;
-}
+	});
+  function shift(){
+      $(".head-wrap").addClass("shift-text");
+      terminalHeight();
+  }
 
-hr {
-  
-  width:220px;
-  margin-top:0px;
-}
+  function terminalHeight(){
+      var termHeight = $(".terminal-height");
+      var value = termHeight.text();
+      value = parseInt(value);
+      setTimeout(function(){
+          if (value > 10){
+              value = value-1;
+              this.txtValue = value.toString();
+              termHeight.text(this.txtValue);
+              self.terminalHeight();
+          }
+          else{
+              clearTimeout();
+          }
+      }, 10);
+  }
+	</script>
+	<link href="/main.css" rel="stylesheet" />
+</head>
+<body>
 
-#separator {
-  width:800px;
-  
-}
-
-h1 {
-  
-  margin-bottom:20px;
-  color: #313437;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h2 {
-  color: #313437;
-  font-family: 'adelle', Baskerville, Palatino, serif;
-  font-size: 36px;
-  font-weight: 100;
-  padding:0px;
-  margin-bottom:15px;
-  line-height: 0;
-}
-
-h2 a {
-  color:#313437;
-  text-decoration:none;
-  
-}
-h2 a:hover {
- text-decoration:underline; 
-  
-}
-
-#date {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #6a7179;
-  line-height: 1.75;
-  font-weight:100;
- 
-}
-
-p {
-  color: #6a7179;
-  font-weight: 300;
-  line-height: 1.75;
-  margin-bottom: 25px;
-  
-}
-
-#content p {
- text-align:center; 
-}
-
-#content article p {
- text-align: left;
-}
-
-#content{
- margin:auto;
-  max-width:800px;
-  padding:50px;
-  width:75%;
-  
-}
-  #footer{
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-	  </style>
-	  
-    <header>
-   <!-- <nav>
-      <a href="https://twitter.com/emirca_">Twitter</a>
-      <a href="/hof.txt">Hof</a>
-      <a href="mailto:emirakkutlu@gmail.com">Mail</a>
-     
-     
-      
-    </nav>
--->
-    </header>
-    <h1> Emir Cuneyt Akkutlu </h1>
-  <hr>
-    <div id="content">
-      <section="whoiam">
-        <p>
-      I'm a Site Reliability Engineer currently working at Athens/Greece.<br> 
-		 Besides my daily work, I spend my time on hacking, gaming and fishing.<br><br>
-		 My gaming journey started with Ultima Online and Knight Online, after those two I've met with Dota and WoW. For now, Dota 2 and Wow are the two games that I spend my gaming time the most.<br>
-		 Fishing passion is coming from my willing to chill and stay calm. The time I spend for fishing simply is a therapy.<br>
-		 Also my interest/love in hacking started with games. After I played lots of them, I've started making them. Then I realize creating is fun, but breaking is more fun.<br>
-		 That was the time I started doing some research and found bug bounties. I was trying to find any information, person or report I can learn anything. And as a beginner that times, I've found Ben Sadeghipour (@nahamsec) and started reading his findings, disclosed reports and watching his streams/videos.<br>
-		 After practicing, I've started to find bugs on real targets. Below you can find my list of Hall of Fame's.        </p>
-        
-        
-      </section>
-      
-	    
-      
-    </div>
-    
-  </body>
-	
-  <div id="footer">
-      <a href="https://twitter.com/emirca_" target="_blank">Twitter</a>
-	  <div></div>
-      <a href="/hof.txt" target="_blank">Hof</a>
-	  <div></div>
-      <a href="mailto:emirakkutlu@gmail.com">Mail</a>
+<div class="header">
+	<div class="head-wrap">
+		<h1 class="h1">Emir Cuneyt Akkutlu</h1>
+		<div class="text-editor-wrap">
+			<div class="title-bar"><span class="title">whoami &mdash; bash &mdash; 80x<span class="terminal-height">25</span></span></div>
+			<div class="text-body">
+				$ <span id="typed"></span>
+			</div>
+		</div>
+		<span class="tagline">CyberSecurity Enthusiast | Bug Hunter | Site Reliability Engineer</span>
+	</div>
+  <div class="wrap">
   </div>
+</div>
+
+<div class="wrap">
+
+   <div class="btn-wrap">
+
+      
+          <a href="https://twitter.com/emirca_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @emirca_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
   
-  
+ 
+    </div>
+	
+	<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("P1 Critical BOOM!");
+}
+</script>
+	<p class="note"><i class="fa fa-envelope"></i>    emirakkutlu@gmail.com </p>
+
+
+
+</div>
+
+<div>
+  <p class="thanks">typed.js by the amazing www.mattboldt.com</p>
+
+</body>
 </html>
