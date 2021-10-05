@@ -2,6 +2,8 @@ Erasmus University > https://www.eur.nl/en/campus/locations/campus-woudestein/se
 Plone.org (First CVE) > https://plone.org/security/announcements/security-patch-released-20210518
 Europe Union > https://cert.europa.eu/cert/newsletter/en/latest_HallOfFame_.html
 Ripe Net > https://www.ripe.net/support/contact/responsible-disclosure-policy/hall-of-fame
+Acronis > https://hackerone.com/acronis/thanks
+Apple > https://support.apple.com/en-us/HT201536
+
 
 Besides these hall of fames, I'm a member of HackerOne with a reputation around 600.
-For my wish to remain anonymous on internet, I keep my HackerOne profile to myself.
