@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fancy blog</title>
+    <title>Things..</title>
     <meta charset="utf-8"/>
-    <!--
-    bug with Fira Sans on Debian https://code.google.com/p/googlefontdirectory/issues/detail?id=368
-    -->
+  
     <style type='text/css'>
       @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300);
-      /*other nice looking background colors: #FFAAA7 or #FF8B94*/
       body {font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #99D1BC; color: #fff; max-width:768px; margin: 0 auto !important;}
       footer {font-size: 0.5em; margin-top: 100px;}
       h2 {margin-top: 50px;}
@@ -27,7 +24,7 @@
 
   <body>
     <div class='content'>
-      <h1>My fancy blog<span class='brand pull-right'>&#9651;</span></h1>
+      <h1>Tools<span class='brand pull-right'>&#9651;</span></h1>
       
       <div class='toc'>
         <span class='pull-right'>TOC</span>
@@ -37,20 +34,46 @@
       </div>
 
       <article id='1'>
-        <h2>This is a h2</h2>
+        <h2>Cloudflare status and reroute check</h2>
 
-        <p>I'am a nice paragraph.</p>
+        <p>From time to time, experiencing Cloudflare issues can be frustrating. Also tracking Cloudflare's reroutes might be useful to determine and analyze the traffic. With this small script added into cron jobs, you can get notified if the Cloudflare region you belong to is operational and rerouting.</p>
 
-        <p>Me too, with a <a href='http://example.com'>Link</a>.</p>
+        <p>To do this, you just need to inspect elements and find your regions `data-component-id` and add to script. It was a messy script which I wrote it in 5 minutes to end this headache Cloudflare cause. I'm open to any of your improvements!</p>
 
-        <pre>And some code.</pre>
+        <pre>from bs4 import BeautifulSoup as BS, element
+             from urllib.request import urlopen
+             import re, requests
 
-        <p>Enough for a first blog post.<p/>
+cf_page = "https://www.cloudflarestatus.com/"
+soup = BS(urlopen(cf_page), 'html.parser').find_all('div', attrs={'data-component-id':'XXXXXXXXXX'})
+soups = BS(urlopen(cf_page), 'html.parser')
+text_to_send = 'YOUR TELEGRAM BOT'
+
+
+
+def send_bot():
+    sending = requests.get(text_to_send)
+
+
+for cwords in soup:
+    astat = cwords.find('span', class_='name').getText()
+    print("City:" + astat)
+
+for words in soup:
+    stat = words.find('span', class_='component-status').getText()
+    print("Cloudflare is:" + stat)
+    x = re.search("Operational", stat)
+    if x:
+        print('nice')
+    else:
+        print('no')
+        send_bot()
+</pre>
+
+        <p>With this script, if you need to follow Cloudflare's and your regions current status, you can access information in real time with some cronjobs.<p/>
+
       </article>
 
-      <footer>
-        Powered by <a href='https://github.com/mrsellars/tstbt'>tstbt</a>.
-      </footer>
     </div>
   </body>
 </html>
